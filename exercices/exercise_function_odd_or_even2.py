@@ -1,10 +1,17 @@
 nb_user = int(input("Type a number (an integer) "))
 
-def even_or_odd(number):
-    '''Takes an integer, return even or odd'''
+def even_or_odd(number:int) -> bool:
+    """Takes an integer, return true or false
+
+    Args:
+        number (int): number is tested
+
+    Returns:
+        bool: True if even, false if odd
+    """
     if number %2 == 0:
-        print("Your number is even")
+        print(True)
     else:
-        print("Your number is odd")
+        print(False)
 
 even_or_odd(nb_user)

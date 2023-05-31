@@ -5,4 +5,15 @@ nb_user4 = int(input('type a fourth number '))
 
 nb_list = [nb_user1, nb_user2, nb_user3, nb_user4]
 
-print(sum(nb_list)/len(nb_list))
+def average_list(list: list) -> float:
+    """takes a list of numbers, return the average
+
+    Args:
+        list (list): a list of numbers
+
+    Returns:
+        float: the average of list's numbers
+    """
+    return sum(list)/len(list)
+
+print(average_list(nb_list))
