@@ -6,7 +6,7 @@ def product_of_absoluts_values(number1:int, number2:int) -> int:
         number2 (int): second number is tested
 
     Returns:
-        int: _description_
+        int: producut of absolute values
     """
     if number1 < 0:
         number1 = - number1
